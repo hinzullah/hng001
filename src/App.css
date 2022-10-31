@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+    *{
+        font-family: 'Inter', sans-serif;
+        background: #F4F5F7;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .Homepage{
+        width: 100%;
+        height: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+#header{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 20px;
+   margin:3rem auto ;
+}
+div #profile__img{
+   width: 88px;
+   height: 88px;
+   border-radius: 50%;
+    background: url(./images/profile.png);
+}
+div #profile__img:hover{
+   background: url(./images/profile=Hover.png);
+   
+}
+.three-dot{
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   right: 3%;
+   top: 5%;
+   display: none;
+}
+.icon{
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+#twitter{
+   text-align: center;
+   font-family: 'Inter';
+   font-weight: 800;
+   font-size: 22px;
+   line-height: 28px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+#slack{
+   display:none;
+}
+a button{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 24px 32px;
+   gap: 8px;
+   width: 100%;
+   height: 68px;
+   background: #EAECF0;
+   margin-top: 10px;
+   border: 1px solid #EAECF0;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   text-align: center;
+   color: #101828;
+}
+a button:active, a button:focus, a button:visited {
+  background-color: none;
+  outline: none;
+  text-decoration: none;
+}
+a button:hover {
+  background-color: #dfe1e6;
+}
+.social{
+   display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 44px;
+    justify-content: center;
+    margin-left: auto;
+    padding: 24px 0;
+    
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 24px 0;
+    width: 100%;
+    margin-bottom: 0;
 }
+ @media (max-width: 768px) {
+    .three-dot{
+        display: block;
+    }
+    .icon{
+        display: none;
+        
+    }
+    
+     footer{
+        display:grid;
+        flex-direction: row;
+        align-items: left;
+        gap: 24px;
+        padding: 16px 0;
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+     }
+ }
+    
+    
