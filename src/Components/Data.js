@@ -38,6 +38,12 @@ const Data = () => {
           link: "https://books.zuri.team/design-rules",
           subtext: "Where you pitch the free design book offered by Zuri",
         },
+        {
+          id: "contact",
+          name: "Contact me",
+          link: "/contact",
+          subtext: "This is where you can easily reach out to me",
+        },
       ];
       
         
