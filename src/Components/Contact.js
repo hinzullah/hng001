@@ -13,23 +13,23 @@ const Contact = () => {
           <form>
             <div className='name'>
               <label>First name</label>
-              <input type='text' id="first_name" placeholder="Enter your first name"/>
+              <input type='text' required id="first_name" placeholder="Enter your first name"/>
 
               <label>Last name</label>
-              <input type='text' id="last_name" placeholder="Enter your last name"/>
+              <input type='text' required id="last_name" placeholder="Enter your last name"/>
             </div>
             
 
             <label>Email</label>
-            <input type='email' id="email" placeholder="yourname@email.com"/>
+            <input type='email' required id="email" placeholder="yourname@email.com"/>
 
           <span>
                 <label>Message</label>
-                <textarea type="textarea" id='message' placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+                <textarea type="textarea" required id='message' placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
           </span>
 
             <span>
-                <input id='checkbox' type='checkbox'/>
+                <input id='checkbox' required type='checkbox'/>
                 <p>You agree to providing your data to {} who may contact you.</p>
             </span>
             
